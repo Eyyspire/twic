@@ -16,21 +16,26 @@ if errorlevel 1 (
     exit /b 1
 )
 
-REM Check if two arguments (start and end numbers) are provided
-if "%~2"=="" (
+
+if "%~1"=="" (
     echo Usage: %~nx0 start_number end_number
     exit /b 1
 )
+set "start_number=%~1"
+
+if "%~2"=="" (
+    set "end_number=%start_number%"
+)
+if "%~2" NEQ "" (
+    set "end_number=%start_number%"
+)
+
 
 REM Create the "downloaded games" folder in the current working directory
-set "downloaded_games_folder=%cd%\downloaded games"
+set "downloaded_games_folder=%cd%\downloaded_games"
 if exist "%downloaded_games_folder%" rmdir /s /q "%downloaded_games_folder%"
 mkdir "%downloaded_games_folder%"
 
-
-REM Loop through the range of numbers and download the files
-set "start_number=%~1"
-set "end_number=%~2"
 
 REM Create a new PGN file to store all the games
 set "merged_pgn=%downloaded_games_folder%\all_games_!start_number!-!end_number!.pgn"
