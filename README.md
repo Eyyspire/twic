@@ -1,6 +1,6 @@
 # Twic game fetcher
 
-This repository contains a windows shell program that allow to fecth games from the [twic website](https://theweekinchess.com/) thatt publishes each week the earliests games played.
+This repository contains a windows shell program that allow to fecth games from the [twic website](https://theweekinchess.com/) that publishes each week the earliests games played.
 
 ## How to ?
 
