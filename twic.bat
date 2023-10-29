@@ -27,7 +27,7 @@ if "%~2"=="" (
     set "end_number=%start_number%"
 )
 if "%~2" NEQ "" (
-    set "end_number=%start_number%"
+    set "end_number=%~2"
 )
 
 
