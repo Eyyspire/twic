@@ -28,8 +28,8 @@ If you want to doanload multiple ones, enter the first number and the last one. 
 ### Languages
 
 The script is implemented in python and in windows script if you do not have python.  
-To run the python script (version to use by default), replace `<program> by <python3 twic.py>`.  
-To run the windows script, replace `<program> by <./twic.bat>`.
+To run the python script (version to use by default), replace `<program> by python3 twic.py`.  
+To run the windows script, replace `<program> by ./twic.bat`.
 
 
 
